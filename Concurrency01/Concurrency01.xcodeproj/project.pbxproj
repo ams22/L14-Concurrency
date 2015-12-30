@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852778481C2ECC3C006B3102 /* CounterIncrementor.m in Sources */ = {isa = PBXBuildFile; fileRef = 852778471C2ECC3C006B3102 /* CounterIncrementor.m */; };
+		8527784B1C2ECE66006B3102 /* CounterIncrementorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8527784A1C2ECE66006B3102 /* CounterIncrementorOperation.m */; };
+		8527784E1C305BED006B3102 /* GCDShowcase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8527784D1C305BED006B3102 /* GCDShowcase.m */; };
+		852778501C305DCF006B3102 /* GCDShowcaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8527784F1C305DCF006B3102 /* GCDShowcaseTests.m */; };
+		852778531C305FA4006B3102 /* NSNumber+EKStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 852778521C305FA4006B3102 /* NSNumber+EKStuff.m */; };
+		852778591C306ABB006B3102 /* ComputationalyIntensiveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 852778581C306ABB006B3102 /* ComputationalyIntensiveOperation.m */; };
 		85C111C91C2C3016002F4D5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C111C81C2C3016002F4D5A /* main.m */; };
 		85C111CC1C2C3016002F4D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C111CB1C2C3016002F4D5A /* AppDelegate.m */; };
 		85C111CF1C2C3016002F4D5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C111CE1C2C3016002F4D5A /* ViewController.m */; };
 		85C111D21C2C3016002F4D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C111D01C2C3016002F4D5A /* Main.storyboard */; };
 		85C111D41C2C3016002F4D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C111D31C2C3016002F4D5A /* Assets.xcassets */; };
 		85C111D71C2C3016002F4D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C111D51C2C3016002F4D5A /* LaunchScreen.storyboard */; };
-		85C111E21C2C3016002F4D5A /* Concurrency01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C111E11C2C3016002F4D5A /* Concurrency01Tests.m */; };
+		85C111ED1C2C30C9002F4D5A /* RaceConditionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C111EC1C2C30C9002F4D5A /* RaceConditionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852778461C2ECC3C006B3102 /* CounterIncrementor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterIncrementor.h; sourceTree = "<group>"; };
+		852778471C2ECC3C006B3102 /* CounterIncrementor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterIncrementor.m; sourceTree = "<group>"; };
+		852778491C2ECE66006B3102 /* CounterIncrementorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterIncrementorOperation.h; sourceTree = "<group>"; };
+		8527784A1C2ECE66006B3102 /* CounterIncrementorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterIncrementorOperation.m; sourceTree = "<group>"; };
+		8527784C1C305BED006B3102 /* GCDShowcase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDShowcase.h; sourceTree = "<group>"; };
+		8527784D1C305BED006B3102 /* GCDShowcase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDShowcase.m; sourceTree = "<group>"; };
+		8527784F1C305DCF006B3102 /* GCDShowcaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDShowcaseTests.m; sourceTree = "<group>"; };
+		852778511C305FA4006B3102 /* NSNumber+EKStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+EKStuff.h"; sourceTree = "<group>"; };
+		852778521C305FA4006B3102 /* NSNumber+EKStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+EKStuff.m"; sourceTree = "<group>"; };
+		852778571C306ABB006B3102 /* ComputationalyIntensiveOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputationalyIntensiveOperation.h; sourceTree = "<group>"; };
+		852778581C306ABB006B3102 /* ComputationalyIntensiveOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputationalyIntensiveOperation.m; sourceTree = "<group>"; };
 		85C111C41C2C3016002F4D5A /* Concurrency01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concurrency01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C111C81C2C3016002F4D5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85C111CA1C2C3016002F4D5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,8 +55,8 @@
 		85C111D61C2C3016002F4D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85C111D81C2C3016002F4D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C111DD1C2C3016002F4D5A /* Concurrency01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Concurrency01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		85C111E11C2C3016002F4D5A /* Concurrency01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Concurrency01Tests.m; sourceTree = "<group>"; };
 		85C111E31C2C3016002F4D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C111EC1C2C30C9002F4D5A /* RaceConditionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaceConditionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +98,14 @@
 		85C111C61C2C3016002F4D5A /* Concurrency01 */ = {
 			isa = PBXGroup;
 			children = (
+				852778461C2ECC3C006B3102 /* CounterIncrementor.h */,
+				852778471C2ECC3C006B3102 /* CounterIncrementor.m */,
+				852778491C2ECE66006B3102 /* CounterIncrementorOperation.h */,
+				8527784A1C2ECE66006B3102 /* CounterIncrementorOperation.m */,
+				8527784C1C305BED006B3102 /* GCDShowcase.h */,
+				8527784D1C305BED006B3102 /* GCDShowcase.m */,
+				852778571C306ABB006B3102 /* ComputationalyIntensiveOperation.h */,
+				852778581C306ABB006B3102 /* ComputationalyIntensiveOperation.m */,
 				85C111CA1C2C3016002F4D5A /* AppDelegate.h */,
 				85C111CB1C2C3016002F4D5A /* AppDelegate.m */,
 				85C111CD1C2C3016002F4D5A /* ViewController.h */,
@@ -90,6 +115,8 @@
 				85C111D51C2C3016002F4D5A /* LaunchScreen.storyboard */,
 				85C111D81C2C3016002F4D5A /* Info.plist */,
 				85C111C71C2C3016002F4D5A /* Supporting Files */,
+				852778511C305FA4006B3102 /* NSNumber+EKStuff.h */,
+				852778521C305FA4006B3102 /* NSNumber+EKStuff.m */,
 			);
 			path = Concurrency01;
 			sourceTree = "<group>";
@@ -105,8 +132,9 @@
 		85C111E01C2C3016002F4D5A /* Concurrency01Tests */ = {
 			isa = PBXGroup;
 			children = (
-				85C111E11C2C3016002F4D5A /* Concurrency01Tests.m */,
 				85C111E31C2C3016002F4D5A /* Info.plist */,
+				85C111EC1C2C30C9002F4D5A /* RaceConditionTests.m */,
+				8527784F1C305DCF006B3102 /* GCDShowcaseTests.m */,
 			);
 			path = Concurrency01Tests;
 			sourceTree = "<group>";
@@ -211,7 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8527784B1C2ECE66006B3102 /* CounterIncrementorOperation.m in Sources */,
 				85C111CF1C2C3016002F4D5A /* ViewController.m in Sources */,
+				852778481C2ECC3C006B3102 /* CounterIncrementor.m in Sources */,
+				852778531C305FA4006B3102 /* NSNumber+EKStuff.m in Sources */,
+				852778591C306ABB006B3102 /* ComputationalyIntensiveOperation.m in Sources */,
+				8527784E1C305BED006B3102 /* GCDShowcase.m in Sources */,
 				85C111CC1C2C3016002F4D5A /* AppDelegate.m in Sources */,
 				85C111C91C2C3016002F4D5A /* main.m in Sources */,
 			);
@@ -221,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85C111E21C2C3016002F4D5A /* Concurrency01Tests.m in Sources */,
+				85C111ED1C2C30C9002F4D5A /* RaceConditionTests.m in Sources */,
+				852778501C305DCF006B3102 /* GCDShowcaseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +436,7 @@
 				85C111E81C2C3016002F4D5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85C111E91C2C3016002F4D5A /* Build configuration list for PBXNativeTarget "Concurrency01Tests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +445,7 @@
 				85C111EB1C2C3016002F4D5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

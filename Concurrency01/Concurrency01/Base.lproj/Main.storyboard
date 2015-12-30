@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-rU-GBG">
+                                <rect key="frame" x="300" y="273" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5j-wi-Vlw">
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FTj-Th-Pzr">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FTj-Th-Pzr" firstAttribute="leading" secondItem="Z5j-wi-Vlw" secondAttribute="leading" id="3Xl-cz-CQS"/>
+                                    <constraint firstAttribute="trailing" secondItem="FTj-Th-Pzr" secondAttribute="trailing" id="BGv-4k-U4d"/>
+                                    <constraint firstAttribute="bottom" secondItem="FTj-Th-Pzr" secondAttribute="bottom" id="jZv-2F-eNF"/>
+                                    <constraint firstItem="FTj-Th-Pzr" firstAttribute="top" secondItem="Z5j-wi-Vlw" secondAttribute="top" id="udH-zm-ui4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ai-MT-IaF">
+                                <rect key="frame" x="262.5" y="326" width="75" height="30"/>
+                                <state key="normal" title="Посчитать"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mDt-Ek-0nD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ai-MT-IaF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2d-lA-tf1"/>
+                            <constraint firstItem="Z5j-wi-Vlw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y9W-AB-OEh"/>
+                            <constraint firstItem="Z5j-wi-Vlw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b3t-DT-t2h"/>
+                            <constraint firstItem="GpZ-rU-GBG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qzi-my-yvb"/>
+                            <constraint firstItem="9Ai-MT-IaF" firstAttribute="top" secondItem="Z5j-wi-Vlw" secondAttribute="bottom" constant="8" symbolic="YES" id="rRU-Iq-cHc"/>
+                            <constraint firstItem="Z5j-wi-Vlw" firstAttribute="top" secondItem="GpZ-rU-GBG" secondAttribute="bottom" constant="8" symbolic="YES" id="zrV-6U-9ft"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="FTj-Th-Pzr" id="zrM-Ao-2uy"/>
+                        <outlet property="resultLabel" destination="GpZ-rU-GBG" id="x6R-PH-XV1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
